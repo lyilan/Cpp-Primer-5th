@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 class HasPtr
 {
 public:
@@ -10,14 +11,17 @@ private:
     int i;
 };
 
-HasPtr f(HasPtr hp) {
+HasPtr f(HasPtr hp)
+{
     HasPtr ret = hp;
     return ret;
 }
 
-int main() {
+int main()
+{
     HasPtr p("some values");
     f(p);
     HasPtr q(p);
+    std::cout << "hello world" << std::endl;
     return 0;
 }

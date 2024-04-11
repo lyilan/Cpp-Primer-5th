@@ -1,0 +1,11 @@
+# 忽略可执行文件
+*.exe
+
+# 忽略vscode
+*.vscode
+
+# 忽略.json
+*.json
+
+# 忽略txt文件
+*.txt

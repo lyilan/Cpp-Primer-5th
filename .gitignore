@@ -9,3 +9,6 @@
 
 # 忽略txt文件
 *.txt
+
+# 忽略build文件
+build

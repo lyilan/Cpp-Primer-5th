@@ -12,3 +12,6 @@
 
 # 忽略build文件
 build
+
+# 忽略.Ds_Store文件
+.DS_Store

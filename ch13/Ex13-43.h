@@ -8,7 +8,7 @@ public:
     StrVec &operator=(const StrVec &);   // 拷贝赋值运算
     ~StrVec();                           // 析构函数
     void push_back(const std::string &); // 拷贝元素
-    void reserve(size_t); // 分配至少能容纳n个元素的内存空间
+    void reserve(size_t);                // 分配至少能容纳n个元素的内存空间
     size_t size() const { return first_free - elements; }
     size_t capacity() const { return cap - elements; }
     std::string *begin() const { return elements; }

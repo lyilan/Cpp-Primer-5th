@@ -1,4 +1,4 @@
-#include "Ex13-39.h"
+#include "Ex13-43.h"
 
 std::allocator<std::string> StrVec::alloc;
 
@@ -22,9 +22,8 @@ void StrVec::free()
     // 不能传递给deallocate一个空指针，如果elements为0，什么也不做
     if (elements)
     {
-        // 逆序销毁旧元素
-        for (auto p = first_free; p != elements; p--)
-            alloc.destroy(p);
+        std::for_each(elements, first_free, [](std::string &s)
+                      { alloc.destroy(&s); });
         alloc.deallocate(elements, cap - elements);
     }
 }

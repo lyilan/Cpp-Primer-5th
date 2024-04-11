@@ -1,4 +1,3 @@
-#include "Ex13-39.h"
 #include <iostream>
 int main()
 {
